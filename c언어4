@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+void main()
+{
+	int data1, data2;
+	data1 = 5;
+	data2 = data1;
+	printf("data1 = %d, data2 = %d\n", data1, data2); //07_01_01.c
+
+	int data3 = 5, data4 = 3;
+	int result1 = data3 + data4;
+	int result2 = data3 * data4;
+	int result3 = data3 / data4;
+	int result4 = data3 % data4;
+	printf("result : %d, %d, %d, %d\n", result1, result2, result3, result4); //07_01_02.c
+	//%는 나눗셈 나머지를 나타내는 연산자이다.
+
+	int result5 = data3 > 7;
+	int result6 = data4 <= data3;
+	int result7 = data4 == 7;
+	int result8 = data4 != data3;
+	printf("result : %d, %d, %d, %d\n", result5, result6, result7, result8); //07_01_03.c
+	//=은 대입연산자, == 같다라는 뜻의 관계연산자
+	//!는 not을 의미, != 같지않다
+
+	int result9 = 0 || 1;
+	int result10 = 3 && -1;
+	int result11 = data3 == 3 || data4 == 3;
+	int result12 = data3 == 3 && data4 == 3;
+	int result13 = !data3;
+	printf("result : %d, %d, %d, %d, %d\n", result9, result10, result11, result12, result13); //07_01_04.c
+	//논리연산자에서 0을 제외한 나머지 모든 숫자는 1(참)으로 해석된다.
+	//논리연산자 &&에서 앞에 조건이 거짓이면 뒤에 조건이 어떻든 결과값은 거짓이 되므로 뒤에 조건은 수행하지 않는다.
+	//|| 또한 마찬가지로 앞에 조건이 참이되면 뒤에 조건이 어떻든 결과값은 참이 되므로 뒤에 조건은 수행하지 않는다.
+}
