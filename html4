@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML TEXT Basic Page</title>
+</head>
+<body>
+    <!--코드 2-4 본문태그(1)-->
+    <h1>Lorem ipsum</h1> <!--제목태그-->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        연근이 귀여워. 우엉이도 귀여워. 달이는 못생겼어.
+        연근이 잘때 코골아.
+        우엉이 계속 코 뱉어.
+        달이는 찌질해.
+    </p> <!--본문태그-->
+    <p>
+        Nam commodo mi a lorem congue id rutrum leo venenatis.
+        연근이 문 앞에서 울어. 미야아아아옹~
+        우엉이는 침대에 누워서 그루밍하네. 팔자 좋아보인다. 난 공부중인데...
+        연근이 또 울어. 와오옹~ 이야엉~?
+        지우는 오늘도 날뛰네...왜 저뤱...
+    </p>
+
+    <hr />
+    <hr />
+
+    <!--코드 2-5 본문태그(2)-->
+    <h1>Lorem ipsum</h1>
+    <h2>dolor dit amet</h2>
+    <hr /> <!--수평줄 태그-->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <br /> <!--줄바꿈 태그-->
+    <p>In porttitor lorem at justo feugiat aliquet.</p>
+    <br />
+    <p>Nunc id massa at magna semper hendrerit.</p>
+    <br />
+    <p>Vivamus rhoncus eeros vel ante suscipit non facilisis risus rutrum.</p>
+
+    <a href="http://hanbit.co.kr">Hanbit</a><br />
+    <a href="https://github.com/">github</a><br />
+
+    <hr />
+    <hr />
+
+    <!--코드 2-7 네이버 메인 페이지 빈 링크 일부
+        a태그의 하이퍼링크 기능을 이용하지 않고자 할 때(웹 표준 지키면서 이동원하지 않음)
+        href값은로 #을 넣는데 이걸 빈 링크 라고 한다.-->
+    <li><a href="#">언론사 전체보기</a></li>
+
+    <hr />
+    <hr />
+
+    <!--코드 2-8 페이지 내부 이동-->
+    <a href="#alpha">Move to Alpha</a>
+    <a href="#beta">Move to Beta</a>
+    <a href="#gamma">Move to Gamma</a>
+    <hr />
+    <h1 id="alpha">Alpha</h1> <!--이동하고자 하는 곳에 id 부여-->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+        으아아아ㅏ아아ㅏ아 나도 뒹굴뒹굴 하고 싶다!!!<br />
+        나도 연근이 안고 뒹굴뒹굴 하고 싶다!!!!!<br />
+    </p>
+    <h1 id="beta">Beta</h1>
+    <p>
+        Duis nec risus a ante pellentesque rhoncus at et leo.<br />
+        내가 무슨 부귀영화를 누리겠다고 이러고 있을까...<br />
+        아니야...취직해서 돈벌어서 우리 연근이 츄르츄르 많이 사줘야지...<br />
+        아...근데 연근이 살이 뚠실뚠실한데...<br />
+        아니야 우리 연근이 먹고싶은거 다 먹어!!!!!!!<br />
+    </p>
+    <h1 id="gamma">Gamma</h1>
+    <p>
+        Nullam porta, felis sit amet porttitor vestibulum.<br />
+        지우가 배고프다고 하면서 땅바닥에서 그지처럼 뒹굴고있다.<br />
+        이건 뭐 노숙자도 아니고...<br />
+        그래 노숙자보다는 팔자가 낫지<br />
+        등따시고 바람 안불고 안춥고 배고플뿐이지<br />
+        근데 니가 배고파서 나보고 어쩌라고 밥해<br />
+    </p>
+
+    <hr />
+    <hr />
+
+    <!--코드 2-9 글자태그들의 형태 보기
+        스타일시트로 이용가능해서 요즘은 많이 이용 안한다고..-->
+    <h1><b>Lorem ipsum dolor sit amet</b></h1> <!--굵게-->
+    <h1><i>Lorem ipsum dolor sit amet</i></h1> <!--기울게-->
+    <h1><small>Lorem ipsum dolor sit amet</small></h1> <!--작게-->
+    <h1><sub>Lorem ipsum dolor sit amet</sub></h1> <!--아래첨자-->
+    <h1><sup>Lorem ipsum dolor sit amet</sup></h1> <!--위첨자-->
+    <h1><ins>Lorem ipsum dolor sit amet</ins></h1> <!--밑줄-->
+    <h1><del>Lorem ipsum dolor sit amet</del></h1> <!--취소선-->
+    <hr />
+    <b>Lorem ipsum dolor sit amet</b><br />
+    <i>Lorem ipsum dolor sit amet</i><br />
+    <small>Lorem ipsum dolor sit amet</small><br />
+    <sub>Lorem ipsum dolor sit amet</sub><br />
+    <sup>Lorem ipsum dolor sit amet</sup><br />
+    <ins>Lorem ipsum dolor sit amet</ins><br />
+    <del>Lorem ipsum dolor sit amet</del><br />
+
+    <hr />
+    <hr />
+
+    <!--코드 2-10 루비태그를 지원하는 웹브라우저에서-->
+    <ruby>
+        <span>大韓民國</span>
+        <rt>대한민국</rt>
+    </ruby>
+
+    <hr />
+    <hr />
+
+    <!--코드 2-11 루비태그를 지원하지 않는 웹부라우저에서
+        이렇게하면 파이어폭스 같은 곳에서는 大韓民國(대한민국) 형태로 보임-->
+    <ruby>
+        <span>大韓民國</span>
+        <rp>(</rp>
+        <rt>대한민국</rt>
+        <rp>)</rp>
+    </ruby>
+
+    <hr />
+    <hr />
+
+    <!--코드 2-13 목록태그-->
+    <h1>ol tag</h1>
+    <ol>
+        <!--순서가 있는 목록태그-->
+        <li>Facebook</li>
+        <li>Tweeter</li>
+        <li>Linked In</li>
+    </ol>
+    <h1>ul tag</h1>
+    <ul>
+        <!--순서가 없는 목록태그-->
+        <li>Facebook</li>
+        <li>Tweeter</li>
+        <li>Linked In</li>
+    </ul>
+
+    <hr />
+    <hr />
+
+    <!--코드 2-14 목록 중첩하기-->
+    <ul>
+        <li>HTML5
+        <ol>
+            <li>Multimedia Tag</li>
+            <li>Connectivity</li>
+            <li>Device Access</li>
+            </ol>
+        </li>
+        <li>
+            <ul>
+                <li>Animation</li>
+                <li>3D Transform</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr />
+    <hr />
+
+    <!--코드 2-15 정의목록태그-->
+    <dl> <!--정의목록-->
+        <dt>HTML5</dt> <!--정의용어-->
+        <dd>Multimedia</dd> <!--정의설명-->
+        <dd>Connectivity</dd>
+        <dd>Device Access</dd>
+
+        <dt>Milk</dt>
+        <dd>Animation</dd>
+        <dd>3D Transform</dd>
+    </dl>
+
+    <hr />
+    <hr />
+
+    <!--코드 2-16, 17 테이블태그-->
+    <table border="1"> <!--border="1"은 표의 테두리 두께 설정-->
+        <tr> <!--표 내부 행-->
+            <th>Header 1</th> <!--행 내부 제목셀-->
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Data 1</td> <!--행 내부 셀-->
+            <td>Data 1</td>
+        </tr>
+        <tr>
+            <td>Data 2</td>
+            <td>Data 2</td>
+        </tr>
+    </table>
+
+    <hr />
+    <hr />
+
+    <!--코드 2-18 table 태그에 넣을 수 있는 태그들
+        caption, colgroup, thead, tbody, tfoot 등등-->
+    <table border="1">
+        <caption>Caption</caption> <!--table 제목-->
+        <colgroup>
+            <col span="2" style="background: red"/> <!--th를 제외한 td에서 span="2"는 앞 두개의 칼럼 선택, style="background:red"는 배경색 빨강으로-->
+            <col style="background: blue" /> <!--span="2"로 선택한 영역을 제외한 영역에 적용-->
+        </colgroup>
+        <thead style="background:green">
+            <tr>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </tbody>
+        <tfoot style="background:yellow"> <!--마지막 영역 노란색-->
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr />
+    <hr />
+
+    <!--코드 2-19 th와 td의 속성
+        rowspan, colspan-->
+    <table border="1">
+        <tr>
+            <th colspan="3">Table Data</th> <!--colspan="3"은 셀의 너비 3으로 지정-->
+            <th rowspan="3">Table Data</th> <!--rowspan="3"은 셀의 높이 3으로 지정-->
+        </tr>
+        <tr>
+            <td>Tanle Data</td>
+            <td rowspan="2">Table Data</td>
+            <td>Table Data</td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+        </tr>
+    </table>
+
+    <hr />
+    <hr />
+
+    <!--코드 2-20, 21 img 태그-->
+    <img src="Jjanggu.jpg" alt="짱구" width="300"/> <!--src="Jjanggu.jpg"는 이미지파일의 경로를 지정하는 태그로 html파일과 같은 선상에 있으면 이미지 파일 이름으로 지정가능
+                                                      다른 위치에 있다면 경로를 써줘야함
+                                                      alt="짱구"는 이미지파일이 안나왔을 경우 표시되는 글자
+                                                      width="300"은 이미지파일의 너비를 지정-->
+    <img src="Nothing" alt="그림이 존재하지 않습니다." width="300" />
+
+    <hr />
+    <hr />
+
+    <!--코드 2-22 placehold.it 이미지파일의 크기만 알고있을때-->
+    <img src="http://placehold.it/300x200" />
+    <img src="http://placehold.it/200x150" />
+    <img src="http://placehold.it/100x100" />
+
+    <hr />
+    <hr />
+
+    <!--코드 2-23, 24, 25 audio 태그
+        사용방법은 img태그와 비슷함-->
+    <audio src="인생의_회전목마.mp3" controls="controls" autoplay="autoplay"></audio> <!--src는 경로, controls는 재생도구를 출력할지 지정,
+                                                                                   autoplay는 자동재생 지정
+                                                                                   controls="controls"를 controls 라고만 적어도 됨
+                                                                                   마찬가지로 autoplay도 동일
+                                                                                   그 밖에 preload : 음악 재생전 파일을 모두 불러올지 지정
+                                                                                           loop : 반복재생 이 있음-->
+    <!--audio 태그 mp3, ogg, wav 확장자따라 지원하는 웹 브라우저 다름
+        이럴때 source 태그 사용
+        (사용예시)
+        <body>
+            <audio controls="controls">
+                <source src="인생의_회전목가.mp3" type="audio/mp3"/>
+                <source src="인생의_회전목마.ogg" type="audio/ogg"/>
+            </audio>
+        <body>
+        mp3 -> ogg 파일변환은 변환프로그램 다운받아서 이용
+        source type 지정 안해줘도 상관없지만 웹 브라우저가 재생 가능한 파일인지 확인하는데 트래픽이 낭비되니 지정해주는게 좋음-->
+    
+</body>
+</html>
