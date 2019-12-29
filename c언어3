@@ -1,0 +1,53 @@
+#include <stdio.h>
+
+void main()
+{
+	putchar('H');
+	putchar('i');
+	putchar('~'); //06_04_01.c
+
+	puts("Hi~"); //06_04_02.c
+
+	puts("Baek Han Byeol"); //1분퀴즈 06-1
+
+	printf("65의 ASCII값은 %c입니다.\n", 65); //06_05_01.c
+
+	char data = 65;
+	printf("%d의 ASCII값은 %c입니다.\n", data, data); //06_05_02.c
+
+	float value = 2.1f;
+	printf("%f\n", value); //06_05_03.c
+
+	printf("%f, %d\n", value, value); //06_05_04.c
+	//실수를 %d로 나타내려고하면 오류로인해 정확한 값을 출력하지 못한다.
+
+	int data1 = -1;
+	unsigned int data2 = 4294967295;
+	printf("%d, %u, %d, %u\n", data1, data1, data2, data2); //06_05_05.c
+	//%u는 부호를 고려하지 않는 10진 정수를 나타낸다
+	//-1은 부호제외 음수 최댓값으로 31비트 모두 1을 나타내고 4294967295는 int 최댓값으로 32비트 모두 1을 나타낸다.
+
+	char data3 = -1;
+	printf("%d, %u\n", data3, data3); //06_05_06.c 
+	//%d와 %u는 32비트 정수 기반으로 작동하기때문에 char의 최댓값인 255를 출력하지 않는다.
+
+	int data4 = 10;
+	int data5 = 010;
+	int data6 = 0x10;
+	printf("%x, %d, %o\n", data4, data5, data6); //06_05_07.c
+
+	float data7 = 12.34f;
+	printf("%f, %e, %E\n", data7, data7, data7); //06_05_08.c
+
+	int data8 = 7;
+	printf("[%d] [%5d]\n", data8, data8); //06_05_09.c
+	//출력칸수 자릿수 지정하기
+	
+	printf("[%5d] [%05d] [%-5d]\n", data8, data8, data8); //06_05_10.c
+	//+,-로 오른쪽 정렬, 왼쪽 정렬 가능
+
+	double data9 = 3.141592;
+	printf("[%f] [%.4f] [%8.4f] [%-8.4f]\n", data9, data9, data9, data9); //06_05_11.c
+	//실수 자릿수 지정 시 '.'도 한자리 차지한다.
+	//소수점 자리변경 시 반올림 적용된다.
+}
