@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int Sum(int value1, int value2)
+{
+	int result = value1 + value2;
+	return result;
+}
+
+void main() 
+{
+	printf("Hello, World!\n"); //05_01_01.c
+
+	int s;
+	s = Sum(2, 3);
+	printf("더하기 작업의 결과는 %d\n", s); //05_02_01.c
+	s = Sum(4, 5);
+	printf("더하기 작업의 결과는 %d\n", s); //1분퀴즈 05-1
+}
